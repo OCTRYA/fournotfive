@@ -1,0 +1,30 @@
+{# templates/selfMonitoring/selfMonitoring.html.twig #}
+{% extends 'main.html.twig' %}
+
+{% block title %}<h2>Individueel leertraject</h2>{% endblock %}
+
+{% block body %}
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="input-group input-group-lg mb-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Zoek de naam van de leerling</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="input-group input-group-lg mb-4">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Selecteer een klas</span>
+          </div>
+          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-sm-4">
+      ILT van:
+      </div>
+    </div>
+{% endblock %}

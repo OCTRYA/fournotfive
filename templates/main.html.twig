@@ -1,0 +1,55 @@
+{# templates/base.html.twig #}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <!-- Latest compiled and minified CSS -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"/>
+
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"/>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="../js/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        {% endblock %}
+    </head>
+    <body>
+      {% block navigation %}
+      <!--  Header -->
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.php"><span><img src="/images/logo.png" style="width:30px; margin-right:10px"></span>FOURnotFIVE</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.php">Home</a></li>
+              <li><a href="../selfMonitoring/selfMonitoring">Zelfmonitoring</a></li>
+  			<li><a href="../phonemes/phonemes">Woordreeksen</a></li>
+              <li><a href="contact.php">Contact</a></li>
+              <!-- li><a href="#">Sign in</a-->
+              <!--  li><a href="dashboard.php"><img src="images/dashboard.png" width="20px"/></a></li-->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+    <!-- END HEADER -->
+    {% endblock %}
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    </body>
+</html>

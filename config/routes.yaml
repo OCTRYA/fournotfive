@@ -1,0 +1,18 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+app_fournotfive_main:
+    path: /
+    controller: App\Controller\FourNotFiveController::main
+
+app_tools_selfMonitoring:
+    path: /selfMonitoring/selfMonitoring
+    controller: App\Controller\FourNotFiveController::selfMonitoring
+
+app_phonemes_phonemes:
+    path: /phonemes/phonemes
+    controller: App\Controller\FourNotFiveController::phonemes
+
+app_ilt_ilt:
+    path: /ilt/ilt
+    controller: App\Controller\FourNotFiveController::ilt
